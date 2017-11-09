@@ -1,0 +1,254 @@
+
+html{
+    width:100%;
+    height:100%;
+    font-size:100px;
+}
+body{
+    width:100%;
+    height:100%;
+    overflow:hidden;
+    font-size:16px;
+}
+@media screen and (min-width:375px){
+    html{
+        font-size:50px;
+    }
+}
+@media screen and (min-width:412px){
+    html{
+        font-size:55px;
+    }
+}
+@media screen and (min-width:750px){
+    html{
+        font-size:100px;
+    }
+}
+.swiper-container {
+    height:3rem;
+    background:gold;
+}
+.swiper-slide{
+    text-align:center;
+    line-height:3rem;
+}
+    /*按钮样式*/
+.btnbox{
+    width:100%;
+    height:1rem;
+    margin:0.2rem 0;
+    display:flex;
+    justify-content: space-between;
+}
+.btnbox div{
+    width:30%;
+    height:1rem;
+    border:1px solid #000;
+    border-radius: 0.2rem;
+    line-height:1rem;
+    text-align:center;
+    background:#fff;
+}
+.wait.active{
+    background:skyblue;
+    color:#fff;
+}
+.done.active{
+    background:lightpink;
+    color:#fff;
+}
+.content{
+    width:100%;
+    height:calc(100% - 5.4rem);
+    overflow:hidden;
+    border:1px solid #fff;
+    position:relative;
+}
+.content li{
+    height:1rem;
+    margin:0.2rem 0;
+    display:flex;
+    color:#fff;
+    background:red;
+    /*text-align:left;*/
+    line-height:1rem;
+    position:relative;
+}
+.content li p{
+    width: 4.2rem;
+    margin:0 0.1rem 0 0.2rem;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    color:white;
+}
+.content li i{
+    display:block;
+    /*margin-left:.1rem;*/
+}
+.content li i.active{
+    color:red;
+}
+.content li input{
+    width: 0.34rem;
+    height: 0.34rem;
+    margin:0.32rem 0.2rem 0.32rem 0.24rem;
+}
+.content ul li time{
+    margin-top:.22rem;
+    font-size: .14rem;
+    color: #E5E5E5;
+    line-height: .3rem;
+}
+.content ul li time span{
+    color:#E5E5E5;
+}
+.content ul li>span{
+    margin-left: .2rem;
+    color:#E5E5E5;
+}
+/*-----------------*/
+.content ul li span.active{
+    color:orangered;
+}
+#mask{
+    width:100%;
+    height:100%;
+    background:rgba(0,0,0,0.7);
+    z-index: 999;
+    position: absolute;
+    left: 0;
+    top:0;
+    display:none;
+}
+#main{
+    width:100%;
+    height:100%;
+}
+#editarea{
+    width:6rem;
+    height:6rem;
+    border:0.02rem solid #333;
+    position:absolute;
+    left:0;
+    right:0;
+    top:0;
+    bottom:0;
+    margin:auto;
+    background:#fff;
+    border-radius:0.5rem;
+    z-index: 222;
+    display: none;
+}
+#editarea textarea{
+    width:6rem;
+    height:6rem;
+    padding:.5rem;
+    background:#fff;
+    position:relative;
+    border-radius:0.5rem;
+    resize:none;
+}
+#editarea input{
+    width:80%;
+    height:20%;
+    background:red;
+    border:none;
+    position: absolute;
+    bottom:0.2rem;
+    left:0;
+    right:0;
+    margin:auto;
+    border-radius:0.5rem;
+}
+#editarea textarea,input{
+    outline: none;
+}
+.close{
+    width:0.7rem;
+    height:0.7rem;
+    position:absolute;
+    top:0.5rem;
+    right:0;
+    color:#000;
+}
+.showarea {
+    width: 6rem;
+    height: 6rem;
+    border: 0.02rem solid #333;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    background: #fff;
+    border-radius: 0.5rem;
+    z-index: 222;
+    display: none;
+}
+#add{
+    width:100%;
+    height:1rem;
+    position:absolute;
+    left:0;
+    bottom:0;
+    background:orange;
+    text-align:center;
+    line-height:1rem;
+}
+@keyframes show {
+    0%{
+        transform:scale(0.5,0.5);
+    }
+    100%{
+        transform:scale(1,1);
+    }
+}
+.show{
+    animation:show 0.5s linear;
+    display:block!important;
+}
+.right{
+    width: 2.5rem;
+    height: 1rem;
+    background: red;
+    text-align: center;
+    color:white;
+    font-size: .3rem;
+    line-height: 1rem;
+    position:absolute;
+    right:-2.5rem;
+    top:0;
+}
+.del{
+    width: 2.5rem;
+    height: 1rem;
+    background: #00ffa3;
+    text-align: center;
+    color:white;
+    font-size: .3rem;
+    line-height: 1rem;
+    position:absolute;
+    right:-2.5rem;
+    top:0;
+}
+.show-inner{
+    width: 5rem;
+    height: 5rem;
+    border-radius: 0.3rem;
+    padding:.5rem;
+    font-size: .3rem;
+    line-height: .44rem;
+    position: relative;
+    word-break: break-all;   /*字母居中*/
+}
+.showclose{
+    width:0.7rem;
+    height:0.7rem;
+    position:absolute;
+    top:1rem;
+    right:0;
+    color:#000;
+}

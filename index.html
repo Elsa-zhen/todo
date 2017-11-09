@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>记事本</title>
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/swiper.min.css">
+    <link rel="stylesheet" href="css/iconfont.css">
+    <link rel="stylesheet" href="css/base.css">
+</head>
+<body>
+
+    <!--模糊度-->
+    <div id="main">
+
+        <div class="swiper-container">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">todo应用 1</div>
+                <div class="swiper-slide">todo应用 2</div>
+                <div class="swiper-slide">todo应用 3</div>
+            </div>
+        <!-- 如果需要分页器 -->
+            <div class="swiper-pagination"></div>
+        </div>
+
+
+        <!--todo操作界面-->
+            <!--按钮-->
+        <div class="btnbox">
+            <div class="wait active">未完成</div>
+            <div class="done">已完成</div>
+        </div>
+
+        <!--创建内容列表    -->
+        <div class="content">
+            <ul>
+                <!--<li>-->
+                    <!--<time>2017-11-03</time>-->
+                    <!--<span>18:00</span>-->
+                    <!--<p>哎呦喂</p>-->
+                    <!--<i>*</i>-->
+                <!--</li>-->
+            </ul>
+        </div>
+
+            <!--添加按钮-->
+        <div id="add">添加</div>
+    </div>
+
+    <!--遮罩 + 输入框-->
+    <div id="mask">
+        <div id="editarea">
+            <textarea name="" id="text"></textarea>
+            <input type="button" value="提交" id="submit">
+            <div class="close">X</div>
+        </div>
+        <div class="showarea">
+            <div class="show-inner"></div>
+            <div class="showclose">X</div>
+        </div>
+    </div>
+
+
+
+</body>
+<script src="js/swiper.min.js"></script>
+<script src="js/jquery.js"></script>
+<script src="js/iscroll.js"></script>
+<script src="js/hammer.js"></script>
+<script src="js/index.js"></script>
+</html>
